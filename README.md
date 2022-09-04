@@ -20,6 +20,14 @@ Here's a sample run of the program you are aiming to reproduce:
 
 ![](assets/4EF0D257-3493-491D-9626-02CC5879FF3D-2037-00027A57042BE4EA.png)
 
+## Testing
+
+To test your code:
+
+1. Try it out interactively. Run `python3 main.py` in the terminal, or use your
+   editor integration.
+2. Run the automated tests. Run `python3 test.py` in the terminal.
+
 ## Hints
 
 1. The tests are picky about exactly what you print out! Pay special attention to your `print` statements, so that your code is exactly right.
