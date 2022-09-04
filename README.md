@@ -11,14 +11,14 @@ Write a program that prompts the user for a USD value, and outputs the value, co
 The starter code specifies the exchange rate to use: 
 
 ```python
-NAIRA_PER_DOLLAR = 410.59 # exchange rate as of Nov 10 2021 
+NAIRA_PER_DOLLAR = 424.55 # Central Bank exchange rate
 ```
 
 Run the tests to check that your solution is correct.
 
 Here's a sample run of the program you are aiming to reproduce:
 
-![](assets/4EF0D257-3493-491D-9626-02CC5879FF3D-2037-00027A57042BE4EA.png)
+![](assets/sample-run.png)
 
 ## Testing
 
