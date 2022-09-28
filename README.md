@@ -1,4 +1,4 @@
-# Currency Conversion: Instructions
+# Currency Conversion
 
 In this exercise, you'll help the user convert currency from US Dollars to Naira.
 
@@ -8,13 +8,13 @@ Write a program that prompts the user for a USD value, and outputs the value, co
 2. Convert to NGN by multiplying by the exchange rate
 3. Print out the value
 
-The starter code specifies the exchange rate to use: 
+The starter code specifies the exchange rate to use:
 
 ```python
 NAIRA_PER_DOLLAR = 424.55 # Central Bank exchange rate
 ```
 
-Run the tests to check that your solution is correct.
+## Sample Run
 
 Here's a sample run of the program you are aiming to reproduce:
 
