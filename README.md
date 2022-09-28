@@ -1,6 +1,10 @@
-# Instructions  
+# AC Load Estimator
 
-Write a program to build an AC unit load estimator. Your program should get input from the user, use the formula to calculate the horse power, then print the horsepower.
+How much power do you need in order to keep people cool?
+
+Write a program to estimate the power needed for an AC unit. Your program 
+should get input from the user, use the formula to calculate the horse power, 
+then print the horsepower.
 
 Calculate AC load with this equation:
 
@@ -27,5 +31,6 @@ Run the tests to check your answer.
 
 Check that your solution is correct:
 
-1. First, run your code with `python3 main.py` and try different inputs to confirm that it is working.
+1. First, run your code with `python3 main.py` and try different 
+  inputs to confirm that it is working.
 2. Then, run `python3 test.py` to check your program with the automated tests.
