@@ -26,7 +26,7 @@ To test your code:
 
 1. Try it out interactively. Run `python3 main.py` in the terminal, or use your
    editor integration.
-2. Run the automated tests. Run `python3 test.py` in the terminal.
+2. Run the automated tests. Run `python3 test_main.py` in the terminal.
 
 ## Hints
 
