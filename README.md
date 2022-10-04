@@ -30,7 +30,7 @@ Run the test cases and make sure your code passes all the test cases before subm
 ## Testing
 
 1. Test your code by running the code with `python3 main.py` and trying different values.
-2. Check your code against the automated tests with `python3 test.py`.
+2. Check your code against the automated tests with `python3 test_main.py`.
 
 One way to test your code is to compare the output of your program to the output from another program you know is right. You can find a tool that solves the same problem, feed the same input to the tool and your program, and compare your output with theirs.
 
