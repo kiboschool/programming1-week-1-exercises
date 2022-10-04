@@ -33,4 +33,4 @@ Check that your solution is correct:
 
 1. First, run your code with `python3 main.py` and try different 
   inputs to confirm that it is working.
-2. Then, run `python3 test.py` to check your program with the automated tests.
+2. Then, run `python3 test_main.py` to check your program with the automated tests.
