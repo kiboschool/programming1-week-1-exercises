@@ -10,22 +10,28 @@ class Test(TestCase):
     def test_bmi(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
-            self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 18.7")
-            sys.modules.pop('main')
+            try:
+                self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 18.7")
+            finally:
+                sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["50.9", "1.6"])
     def test_bmi(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
-            self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 19.9")
-            sys.modules.pop('main')
+            try:
+                self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 19.9")
+            finally:
+                sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["78.8", "1.56"])
     def test_bmi(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
-            self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 32.4")
-            sys.modules.pop('main')
+            try:
+                self.assertRegex(mock_stdout.getvalue(), r"The body mass index is: 32.4")
+            finally:
+                sys.modules.pop('main')
 
 
 if __name__ == '__main__':
