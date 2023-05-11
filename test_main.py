@@ -5,9 +5,13 @@ import sys
 import io
 import logging
 
+from gradescope_utils.autograder_utils.decorators import weight
+
+
 class Test(TestCase):
     @patch('builtins.input', side_effect=["61.2", "1.81"])
-    def test_bmi(self, mock_input):
+    @weight(10)
+    def test_bmi1(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
             try:
@@ -16,7 +20,8 @@ class Test(TestCase):
                 sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["50.9", "1.6"])
-    def test_bmi(self, mock_input):
+    @weight(10)
+    def test_bmi2(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
             try:
@@ -25,7 +30,8 @@ class Test(TestCase):
                 sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["78.8", "1.56"])
-    def test_bmi(self, mock_input):
+    @weight(10)
+    def test_bmi3(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
             try:
