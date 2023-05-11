@@ -3,9 +3,22 @@ from unittest import TestCase
 import unittest
 import sys
 
+from gradescope_utils.autograder_utils.decorators import weight
+
 class Test(TestCase):
     @patch('builtins.print')
+    @patch('builtins.input', return_value="1")
+    @weight(10)
+    def test_1_USD(self, mock_input, mock_print):
+        import main
+        try:
+            mock_print.assert_called_with("1.00 USD is 424.55 NGN")
+        finally:
+            sys.modules.pop('main')
+
+    @patch('builtins.print')
     @patch('builtins.input', return_value="50")
+    @weight(10)
     def test_50_USD(self, mock_input, mock_print):
         import main
         try:
@@ -15,6 +28,7 @@ class Test(TestCase):
 
     @patch('builtins.print')
     @patch('builtins.input', return_value="14.01")
+    @weight(10)
     def test_14_01_USD(self, mock_input, mock_print):
         import main
         try:
