@@ -3,17 +3,13 @@
 This week, there are several exercise for you to practice what you have learned
 in class.  Each exercise is required.
 
-<aside>
-
-💡 This is an individual project. You are expected to work independently.
-
 ## Required Exercises
 
-Ther are three exercises to complete:
+There are three exercises to complete:
 
-1. **usd-to-naira-converter**: Convert a user-provided USD value to NGN.  
+1. **usd-to-naira-converter**: Convert a user-provided USD value to NGN.
 
-2. **body-mass-index**: Given a users height and weight, calculate their Body Mass Index.  
+2. **body-mass-index**: Given a users height and weight, calculate their Body Mass Index.
 
 3. **ac-load-estimator**: Calculate the AC load required based on the size of a space and the number of people using it.
 
@@ -33,6 +29,6 @@ In order to get credit for your project, you must:
 - submit your work in Gradescope
 - submit your project in Woolf
 
-Note that this assignment is automatically graded and you will see your grade shortly
+Note that this assignment is automatically graded. You will see your grade shortly
 after submitting to Gradescope. You have unlimited number of attempts, therefore you are encouraged
-to modify your work and resubmit as much as possible, before the due date.
+to modify your work and resubmit as much as needed, before the due date.
