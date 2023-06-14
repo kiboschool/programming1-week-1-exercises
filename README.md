@@ -9,7 +9,7 @@ There are three exercises to complete:
 
 1. **usd-to-naira-converter**: Convert a user-provided USD value to NGN.
 
-2. **body-mass-index**: Given a users height and weight, calculate their Body Mass Index.
+2. **body-mass-index**: Given a user's height and weight, calculate their Body Mass Index.
 
 3. **ac-load-estimator**: Calculate the AC load required based on the size of a space and the number of people using it.
 
