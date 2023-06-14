@@ -10,7 +10,7 @@ from gradescope_utils.autograder_utils.decorators import weight
 
 class Test(TestCase):
     @patch('builtins.input', side_effect=["61.2", "1.81"])
-    @weight(10)
+    @weight(1)
     def test_bmi1(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
@@ -20,7 +20,7 @@ class Test(TestCase):
                 sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["50.9", "1.6"])
-    @weight(10)
+    @weight(1)
     def test_bmi2(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
@@ -30,7 +30,7 @@ class Test(TestCase):
                 sys.modules.pop('main')
 
     @patch('builtins.input', side_effect=["78.8", "1.56"])
-    @weight(10)
+    @weight(1)
     def test_bmi3(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as mock_stdout:
             import main
